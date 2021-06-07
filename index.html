@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <title>Power & Co. Engineering LTD | Power Calculator</title>
+
+     <meta charset="utf-8" />
+     <meta name="description"
+          content="Power &amp; Co Eng.  - Power Calculators for quick electrical generator power consumption, sizing, and unit conversion. Convert kW to kVA, kVA to kW, voltage, kW to HP, and more to assist with generator sizing and electrical specifications required for your genset." />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel="icon" type="image/png" href="https://www.powerandco.net/wp-content/uploads/2021/04/cropped-favic-1.png"
+          sizes="512x512" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+     <style>
+          .accordion-button {
+               border: 1px solid #0b3bb7;
+               color: #0b3bb7 !important;
+          }
+
+          input[type="button"],
+          span {
+               background-color: #0b3bb7 !important;
+               color: #fff !important;
+               border: #0b3bb7 !important;
+          }
+
+          li a {
+               color: #0b3bb7 !important;
+          }
+
+          .accordion-collapse {
+           background-color: #f0ffff;
+          }
+          .accordion-button:not(.collapsed) {
+          color: #ffffff !important;
+          background-color: #0c63e4;
+          }
+     </style>
+</head>
+
+<body class="bg-light">
+     <div class="container">
+          <main>
+               <div class="row g-5">
+                    <div class="col-md-1 col-lg-2"></div>
+                    <div class="col-md-10 col-lg-8">
+                         <div class="py-3 text-center">
+                              <h2 style="color: #0b3bb7">
+                                   <img src="https://www.powerandco.net/wp-content/uploads/2021/06/powerandco-logo-High-resolusion-Power-Logo-Aug-2018.png"
+                                        alt="" width="240px" />
+                              </h2>
+                              <p class="pt-3">
+                                   The following calculators are provided to help you determine the size of generator required for your specific application. Other calculators on this page are for unit conversions and other power related calculations.
+                              </p>
+                         </div>
+
+                         <div class="row g-3">
+                              <div class="alert alert-info  pb-1" role="alert">
+                                   <h5>
+                                        <span class="badge bg-secondary bg-light text-info mb-1"><b>I</b> = Amperes</span>
+                                        &nbsp
+                                        <span class="badge bg-secondary bg-light text-success mb-1"><b>V</b> = Volts
+                                        </span>
+                                        &nbsp<span class="badge bg-secondary bg-light text-primary mb-1"><b>P.F</b> = Power
+                                             Factor</span>
+                                        &nbsp<span class="badge bg-secondary bg-light text-danger mb-1"><b>kW</b> =
+                                             Kilowatt</span>
+                                        &nbsp
+                                        <span class="badge bg-secondary bg-light text-warning mb-1"><b>kVA</b> = Volt-ampere
+                                        </span>
+                                        &nbsp
+                                        <span class="badge bg-secondary bg-light text-danger mb-1"><b>DOL</b> = Direction On Line
+                                        </span>
+                                   </h5>
+                              </div>
+                              <div class="accordion" id="accordionExample">
+                                   <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                             <button class="accordion-button collapsed" type="button"
+                                                  data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                  aria-expanded="false" aria-controls="collapseOne">
+                                                  KVA TO KW CALCULATOR
+                                             </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                             aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                             <div class="accordion-body">
+                                                  <div class="col-12">
+                                                       <label for="kVATokWA" class="form-label">Convert from kVA to
+                                                            kW</label>
+                                                       <div class="input-group col-sm-3">
+                                                            <input type="text" class="form-control" placeholder="kVA"
+                                                                 aria-label="kW" id="kw" />
+                                                            <span class="input-group-text">Equals</span>
+                                                            <input type="text" class="form-control" placeholder="kW"
+                                                                 aria-label="kVA" id="kva" />
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                             <button class="accordion-button collapsed" type="button"
+                                                  data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                  aria-expanded="false" aria-controls="collapseTwo">
+                                                  KW TO HP CALCULATOR
+                                             </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                             aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                             <div class="accordion-body">
+                                                  <div class="col-12">
+                                                       <label for="kWToHp" class="form-label">Convert from kW to
+                                                            HP</label>
+                                                       <div class="input-group col-sm-3">
+                                                            <input type="text" class="form-control" placeholder="kW"
+                                                                 aria-label="kw" id="kwa" />
+                                                            <span class="input-group-text">Equals</span>
+                                                            <input type="text" class="form-control" placeholder="HP"
+                                                                 aria-label="hp" id="hpa" />
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFive">
+                                             <button class="accordion-button collapsed" type="button"
+                                                  data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                  aria-expanded="false" aria-controls="collapseFive">
+                                                  GENSET SIZE NEEDED TO START A 3 PHASE ELECTRIC MOTOR DIRECT ON LINE (DOL) START
+                                             </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                             aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                             <div class="accordion-body">
+                                                  <div class="col-12">
+                                                       <label for="HPtoKva" class="form-label">CALCULATE REQUIRED GENERATOR(kVA), WHEN GIVEN HP OF MOTOR</label>
+                                                       <div class="input-group col-sm-3">
+                                                            <input type="text" class="form-control" placeholder="HP"
+                                                                 aria-label="hpc" id="ghp" />
+                                                            <span class="input-group-text">Equals</span>
+                                                            <input type="text" class="form-control" placeholder="kVA"
+                                                                 aria-label="kva" id="gkva" />
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                             <button class="accordion-button collapsed" type="button"
+                                                  data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                  aria-expanded="false" aria-controls="collapseThree">
+                                                  AMPERES CALCULATOR
+                                             </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                             aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                             <div class="accordion-body">
+                                                  <label for="amperes" class="form-label mb-3">Calculating Amperes (when
+                                                       you know kVA)</label>
+                                                  <div class="row">
+                                                       <div class="col-md-2">
+                                                            <div class="input-group col-3">
+                                                                 <select class="form-select" id="phase">
+                                                                      <option selected>Phase</option>
+                                                                      <option value="1">1 Phase</option>
+                                                                      <option value="2">2 Phase</option>
+                                                                      <option value="3">3 Phase</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-3">
+                                                            <input type="text" class="form-control"
+                                                                 placeholder="Generator kVA" required id="kkva" />
+                                                       </div>
+                                                       <div class="col-md-3">
+                                                            <input type="text" class="form-control" id="volts"
+                                                                 placeholder="Volts Required" required />
+                                                       </div>
+                                                       <div class="col-md-2">
+                                                            <input type="button" class="btn btn-secondary form-control"
+                                                                 id="eval" value=" Equals " />
+                                                       </div>
+                                                       <div class="col-md-2">
+                                                            <input type="text" class="form-control" id="amps"
+                                                                 placeholder="Amperes(I)" required />
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                             <button class="accordion-button collapsed" type="button"
+                                                  data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                  aria-expanded="false" aria-controls="collapseFour">
+                                                  POWER REQUIREMENT CALCULATOR
+                                             </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                             aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                             <div class="accordion-body">
+                                                  <label for="amperes" class="form-label mb-3">Power Requirement
+                                                       Calculator
+                                                  </label>
+                                                  <div class="row">
+                                                       <div class="col-md-2">
+                                                            <div class="input-group col-3">
+                                                                 <select class="form-select" id="phase1">
+                                                                      <option selected>Phase</option>
+                                                                      <option value="1">1 Phase</option>
+                                                                      <option value="3">3 Phase</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2">
+                                                            <input type="text" class="form-control" id="V"
+                                                                 placeholder="V" required />
+                                                       </div>
+                                                       <div class="col-md-2">
+                                                            <input type="text" class="form-control" id="I"
+                                                                 placeholder="I" required />
+                                                       </div>
+                                                       <div class="col-md-2">
+                                                            <div class="input-group col-3">
+                                                                 <select class="form-select" id="PF">
+                                                                      <option selected>P.F</option>
+                                                                      <option value="0.8">0.8</option>
+                                                                      <option value="1">1</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2">
+                                                            <input type="button" class="btn btn-secondary form-control"
+                                                                 id="eval1" value="Equals" />
+                                                       </div>
+                                                       <div class="col-md-2">
+                                                            <input type="text" class="form-control" id="KWn"
+                                                                 placeholder="kW" required />
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                             
+                              <hr class="my-4" />
+                         </div>
+                    </div>
+                    <div class="col-md-1 col-lg-2"></div>
+               </div>
+          </main>
+
+          <footer class="my-2 pt-1 text-muted text-center text-small">
+               <p class="mb-1">Copyright &copy; 2021 Power & Co. Eng. Ltd</p>
+               <ul class="list-inline">
+                    <li class="list-inline-item">
+                         <a href="https://www.powerandco.net/">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                         <a href="https://www.powerandco.net/cookie-policy-us/">Terms</a>
+                    </li>
+                    <li class="list-inline-item">
+                         <a href="https://www.powerandco.net/cookie-policy-us/">Support</a>
+                    </li>
+               </ul>
+          </footer>
+     </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
